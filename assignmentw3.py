@@ -1,30 +1,28 @@
-print("== Pet Grooming Service Calculator ===")
-print("Enter service package: bath, trim, or full , Type 'done' when finished selecting services")
+print("== Museum Admission Calculator ===")
+print("Enter exhibit type: general, special, or vip , Type 'done' when finished selecting exhibits")
 total_cost = 0.0
-
 while True :
-    user_input = input("Enter service package: ")
-    if user_input == "done":
+    exhibit_type = input("Enter exhibit type: ")
+    if exhibit_type == "done" :
         break
-    elif user_input == "bath":
-        price = 15
-        print(f"price: {price}")
-    elif user_input == "trim":
-        price = 25
-        print(f"price:{price}")
-    elif user_input == "full":
-        price = 40
-        print(f"price: {price}")
-    total_cost += (price)
-    print(f"Current total: ${total_cost}")
-if total_cost >= 75:
-    discount = int(12)
-    final_cost = total_cost - discount
-else : 
-    final_cost = total_cost 
-print(f"Final total: ${final_cost}")
-print("=== Service Summary ===")
-print(f"Subtotal: {total_cost}")
-print(f"Multi-Pet Discount : { '-12 ' if  total_cost >= 75  else 'no discount'}")
-print(f"Final Total:{final_cost }")
-print("Thank you for choosing our salon!")
+    elif exhibit_type == "general":
+        price = 9.00
+        print (f"exhibit_type :{price} ")
+    elif exhibit_type == "special":
+        price = 14.00
+        print (f"exhibit_type :{price} ")
+    elif exhibit_type == "vip":
+        price = 20.00
+        print (f"exhibit_type :{price} ")
+    total_cost+=(price)
+    print(f"current total : {total_cost}")
+if total_cost >= 55.00:
+    discount = 8
+    final_cost = total_cost - discount 
+else :
+    final_cost = total_cost
+print("=== Admission Summary ===")
+print(f"Subtotal: {final_cost}")
+print(f"Group Visit Discount: { '-8' if total_cost >=55 else 'no discount'} ")
+print(f"Final Total: {final_cost}")
+print("Thank you for visiting!")
