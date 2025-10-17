@@ -22,7 +22,8 @@ if total_cost >= 55.00:
 else :
     final_cost = total_cost
 print("=== Admission Summary ===")
-print(f"Subtotal: {final_cost}")
+print(f"Subtotal: ${final_cost}")
 print(f"Group Visit Discount: { '-8' if total_cost >=55 else 'no discount'} ")
-print(f"Final Total: {final_cost}")
+print(f"Final Total: ${final_cost}")
 print("Thank you for visiting!")
+
